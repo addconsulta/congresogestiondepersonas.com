@@ -1,0 +1,346 @@
+// IMPORTAR
+@import 'nib'
+@import 'normalize'
+
+// VARIABLES
+azul = #00427A
+azul_ = #00192E
+blanco = #FFF
+gris = #AFAFAF
+gris_ = #898989
+grisClaro = #F7F7F7
+naranja = #F29405
+negro = #333
+rojo = #9E0621
+texto = 16px
+regular = 400
+seminegrita = 600
+negrita = 700
+
+// CSS Adicionales
+@import 'utilidades'
+
+body
+	color negro
+	font-family 'Open Sans' !important
+	font-size texto
+	font-style normal
+	font-weight regular
+
+b
+strong
+	font-weight negrita
+
+figure
+	margin 0
+	img
+		max-width 100%
+
+.Wrapper
+	margin 0 auto
+	max-width 1000px
+	padding 0 .5em
+
+.Menu
+	background blanco
+	padding 1em 0
+	position fixed
+	width 100%
+	z-index 9999
+	box-shadow 0 0 2px negro
+.Menu
+	.Wrapper
+		position relative
+.Menu-list
+	padding 1em!important
+.Menu-item
+	margin 0 .5em
+.Menu-item--activo
+	border-bottom 4px solid rojo
+.Menu-link
+	color negro
+	text-decoration none
+	&:hover
+		border-bottom 4px solid rojo
+.Menu-inscripciones
+	position absolute
+	right 0
+	top 0
+
+.Header
+	background url('/img/bg-header.jpg') center
+	background-size cover
+	border-bottom 6px solid azul
+	color azul
+.Header-box
+	background blanco
+	border-left 1em solid azul
+	border-right 1em solid azul
+	width 360px
+	margin-top 9em
+.Header-titulo
+	border-top 1em solid blanco
+	padding 1em 1em 0 1em
+	position relative
+	top -1em
+.Header-fechas
+	font-size 1.9em
+	font-weight negrita
+.Header-fechas--corto
+	font-size 1em
+	margin 0
+
+.Separador
+	border-top 2px solid grisClaro
+	height 1em
+	margin-top 2em
+.Separador-imagen
+	display inline-block
+	position relative
+	text-align center
+	width 100%
+	top -1em
+	& img
+		float initial
+
+.Section
+	padding 1em 0
+.Section-titulo
+	margin 0
+.Section-subtitulo
+	color negro!important
+.Section-imagenLeft
+	margin-right 1em
+	margin-bottom 1em
+.Section-imagenRight
+	margin-left 1em
+	margin-bottom 1em
+.Section-imagenBottom
+	margin-bottom 4em
+
+.SectionExpositores-item
+	&:nth-child(2n)
+		background grisClaro
+.SectionExpositores-expositores
+	font-size 14px
+	width 310px
+	margin 1em
+	&:first-child
+		margin-left 0
+	&:last-child
+		margin-right 0
+.SectionExpositores-avatar
+	img
+		border-radius 50%
+.SectionExpositores-info
+	width 190px
+	margin-left .6em
+.SectionExpositores-expositor
+	font-size 1.2em
+	color azul
+	font-weight seminegrita
+	text-transform uppercase
+.SectionExpositores-expositor
+.SectionExpositores-cargo
+	margin 0
+.SectionExpositores-cargo
+	font-size 12px
+
+.Inversion
+	font-size 14px
+.Inversion-informacion
+	padding 0 2em
+.Inversion-precios
+	margin-left 4em
+.Inversion-item
+	background blanco
+	width 220px
+	margin-left 1em
+	&:first-child
+		margin-left 0
+		.Inversion-precioEspecial
+			background gris
+			border-bottom 4px solid gris_
+	&:last-child
+		background rgba(gris,.25)
+		letter-spacing .2em
+		margin .2em 0
+		padding .5em 0
+		width 100%
+.Inversion-precio
+	font-size 0.8em
+.Inversion-precioEspecial
+	background azul
+	border-bottom 4px solid azul_
+	color blanco
+	display block
+	font-size 1.15em
+	margin-bottom .5em
+	padding .5em 1em
+	& p
+		margin-bottom 0
+	& p + p
+		font-size 2em
+		margin 0
+.Inversion-cta
+	.u-btn
+		display block!important
+		margin 1em
+.Inversion-link
+	color azul
+	font-weight seminegrita
+
+.Programacion
+	padding-top 1em
+.Programacion-titulo
+	background azul
+	color blanco
+	position relative
+	h2
+		font-size 28px
+		margin .4em 0 .4em 3.5em
+		font-weight seminegrita
+.Programacion-icono
+	background azul_
+	padding 10px
+	position absolute
+	top -10px
+	& img
+		float left
+.Programacion-bloques
+	text-align left
+	position relative
+.Programacion-dia
+.Programacion-bloque
+	color azul
+	font-size 1.3em
+	font-weight negrita
+.Programacion-bloque
+	font-weight seminegrita
+.Programacion-dia
+	position absolute
+.Programacion-item
+	margin-bottom 1em
+.Programacion-hora
+	color azul
+	font-size 2.6em
+	font-weight seminegrita
+.Programacion-datos
+	font-size 14px
+	width 73%
+	margin-left 3%
+.Programacion-datostitulo
+	font-weight seminegrita
+	margin 0
+.Programcion-expositor
+	margin 0
+
+.Programacion-dias
+	background azul
+	color blanco
+	display inline-block
+	font-size 1.3em
+	margin 0
+	padding .5em 1em
+.Programacion-box
+	background naranja
+	color azul
+	font-size 21px
+	font-weight seminegrita
+	padding .3em 1em
+.Programacion-horas
+	background rgba(gris,.5)
+	color azul
+	font-weight seminegrita
+	padding .3em 1em
+.Programacion-info
+	margin .5em 0
+	padding .5em 1em
+	.Programacion-datostitulo
+		font-size 20px
+		font-weight seminegrita
+	.Programcion-expositor
+		font-size 14px
+
+.InvitadoEspecial
+	margin 4em 0
+.InvitadoEspecial-info
+	margin-left 3em
+	& p + p
+		margin-bottom 0
+.InvitadoEspecial-nombre
+	font-size 24px
+	font-weight negrita
+	margin 0
+
+.Beneficios-item
+	width 27%
+	margin 1% 2%
+	padding 1%
+	vertical-align top
+	&:first-child
+	&:nth-child(4)
+		margin-left 0
+	&:last-child
+	&:nth-child(3)
+		margin-right 0
+	&:first-child
+	&:nth-child(2)
+		min-height 303px
+.Beneficios-titulo
+	font-size 20px
+	margin-bottom 0
+.Beneficios-descripcion
+	margin-top 0
+
+.Footer
+	font-size 12px
+.Footer-organizadores
+	text-align right
+	padding 1em 0
+.Footer-logos
+	width 35%
+	margin-left 5%
+.Footer
+	.u-box
+		border-top 1px solid gris
+
+
+// LIVE
+.Live
+	background url('/img/bg-live.jpg') center
+	background-size cover
+	display inline-block
+	margin-top 90px
+	width 100%
+	padding 1em 0
+.Live-tituloContenedor
+	position relative
+	height 74px
+.Live-icoTwitter
+	position absolute
+	top -1em
+	left 0
+.Live-titulo
+	color blanco
+	font-size 2em
+	font-weight seminegrita
+	background rgba(negro,0.2)
+	padding-left 3em
+.Live-uBox
+	font-size 0
+.Live-video
+.Live-twitter
+	font-size texto
+.Live-video
+	width 68%
+	margin-right 2%
+.Live-twitter
+	width 30%
+.Live-hashtag
+	font-size 1.5em
+	font-weight regular
+	margin .4em 0
+.Live-participa
+	font-size 1em
+	font-weight seminegrita
